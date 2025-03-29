@@ -32,18 +32,6 @@ import java.util.Scanner;
 
 
      /**
-      *Time Complexity: O(2^n) - Exponential growth
-      * @param n Given number and range of function
-      * @return n-th Fibonacci number
-      */
-    public static int fibonacci(int n) {
-        if (n <= 1) {
-            return n;
-        }
-        return fibonacci(n - 1) + fibonacci(n - 2);
-    }
-
-     /**
       * Computes power function using recursion.
       * Time Complexity: O(n) - Linear recursive calls.
       * @param n Number put in power
