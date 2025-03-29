@@ -12,7 +12,7 @@ import java.util.Scanner;
         //for (int i = 0; i < numbers.length; i++) {
             //numbers[i] = in.nextInt();
         //}
-        System.out.print("Is "+number+" prime? "+(IsPrime(number) ? "Yes" : "No"));
+        System.out.print("Factorial of " + number + " is " + factorial(number));
     }
      /**
       *Finds minimum in array
@@ -58,4 +58,16 @@ import java.util.Scanner;
         return true;
     }
 
+     /**
+      * Calculates factorial
+      * @param n Given number and range of factorial
+      * @return Found factorial
+      */
+    public static int factorial(int n) {
+        int fact = 1;
+        for (int i = 1; i <= n; i++) {
+            fact *= i;
+        }
+        return fact;
+    }
 }
