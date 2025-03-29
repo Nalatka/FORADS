@@ -30,19 +30,6 @@ import java.util.Scanner;
          return min;
      }
 
-     /**
-      * Calculates factorial
-      * Time complexity: O(n)
-      * @param n Given number and range of factorial
-      * @return Found factorial
-      */
-    public static int factorial(int n) {
-        int fact = 1;
-        for (int i = 1; i <= n; i++) {
-            fact *= i;
-        }
-        return fact;
-    }
 
      /**
       *Time Complexity: O(2^n) - Exponential growth
