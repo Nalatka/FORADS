@@ -7,10 +7,22 @@ public class Main {
         System.out.println("Min of {10 1 32 3 45} is "+result);
         System.out.println("Time taken "+duration+" milliseconds");
     }
+
+    /**
+     *
+     * @return The minimum of {10, 1, 32, 3, 45}
+     */
     public static int findMin(){
         return findMin(5, new int[]{10, 1, 32, 3, 45});
     }
 
+    /**Finds m
+     *This method finds minimum of given array
+     * Time complexity: O(n)
+     * @param n The number of elements in array
+     * @param arr The array of int numbers
+     * @return The minimum of array
+     */
     private static int findMin(int n, int[] arr) {
         int min = arr[0];
         for (int i = 1; i < n; i++) {
