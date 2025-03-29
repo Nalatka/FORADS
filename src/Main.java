@@ -19,7 +19,7 @@ import java.util.Scanner;
 
     /**
      * Calculates average of array
-     * Time complexity: O(n)
+     * Time complexity: O(n) - Sum of all element in loop
      * @param n The number of elements
      * @param arr The list of elements
      * @return The average of elements
