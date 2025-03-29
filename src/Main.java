@@ -31,21 +31,6 @@ import java.util.Scanner;
      }
 
      /**
-      * Checks if the number is prime or not
-      * Time complexity: O(n)- checking divisibility up to n
-      * @param number Given number
-      * @return True or False
-      */
-    public static boolean IsPrime(int number) {
-        for (int i = 2; i < number; i++) {
-            if (number % i == 0) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-     /**
       * Calculates factorial
       * Time complexity: O(n)
       * @param n Given number and range of factorial
