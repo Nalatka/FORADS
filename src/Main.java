@@ -1,23 +1,34 @@
-public class Main {
+import java.util.Scanner;
+ class Main {
     public static void main(String[] args) {
         double startTime = System.nanoTime();
         double endTime = System.nanoTime();
         double duration = (endTime - startTime) / 1000000;
-        int result=findMin();
-        System.out.println("Min of {10 1 32 3 45} is "+result);
-        System.out.println("Time taken "+duration+" milliseconds");
-    }
-    public static int findMin(){
-        return findMin(5, new int[]{10, 1, 32, 3, 45});
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter an integer: ");
+        int number = in.nextInt();
+        System.out.print("Enter " + number + " numbers: ");
+        int[] numbers = new int[number];
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = in.nextInt();
+        }
+        int result = averageOf(number,numbers);
+        System.out.println("The average of " + number + " numbers is " + result);
+        System.out.print("Time taken in milliseconds: "+duration);
     }
 
-    private static int findMin(int n, int[] arr) {
-        int min = arr[0];
-        for (int i = 1; i < n; i++) {
-            if (arr[i] < min) {
-                min = arr[i];
-            }
+    /**
+     * Calculates average of array
+     * Time complexity: O(n)
+     * @param n The number of elements
+     * @param arr The list of elements
+     * @return The average of elements
+     */
+    private static int averageOf(int n, int[] arr) {
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            sum += arr[i];
         }
-        return min;
+        return sum/n;
     }
 }
