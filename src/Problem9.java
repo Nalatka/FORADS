@@ -7,6 +7,13 @@ public class Problem9 {
         int m = sc.nextInt();
         System.out.println(binomial(n, m));
     }
+
+    /**
+     * Time Complexity O(2^n) - Call function two times
+     * @param n total number of items
+     * @param k number of items to choose
+     * @return Binomial coefficient
+     */
     public static int binomial(int n, int k) {
         if (k == 0 || k == n) {
             return 1;
